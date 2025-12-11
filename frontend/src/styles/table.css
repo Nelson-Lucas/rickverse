@@ -1,0 +1,101 @@
+.table-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.table-container h1 {
+  color: #00ff9f; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #1a1b2f;
+  color: #e0e0e0;
+}
+
+th {
+  background-color: #9b59b6;
+  color: #ffffff;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #444;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.episode-link {
+  color: #00ff9f;
+  font-weight: bold;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #00ff9f;
+  color: #0b0c1e;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  background-color: #555;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+tr td:nth-child(1),
+tr td:nth-child(3) {
+  color: #ffffff !important;
+}
+
+thead tr th {
+  border-bottom: none !important;
+}
+
+.MuiPaper-root,
+.MuiTableContainer-root {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.MuiInputLabel-root {
+  color: #ffffff !important;  
+}
+
+.MuiInputBase-input {
+  color: #ffffff !important;  
+}
+
+.MuiInputBase-input::placeholder {
+  color: #f0f0f0 !important;   
+}
+
+.MuiOutlinedInput-root {
+  background-color: #1a1b2f !important; 
+  border-radius: 6px;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #00ff9f !important;     
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #00ff9f !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #00ff9f !important;
+}
+
