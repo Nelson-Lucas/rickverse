@@ -37,4 +37,4 @@ rickverse -> cd frontend -> npm test
 
 Deploy
 
-O Projeto foi hospedado no Vercel(frontend) e Render(backend) na seguinte URL: https://rickverse-qpsoplg3j-nelson-lucas-projects.vercel.app/
+O Projeto foi hospedado no Vercel(frontend) e Render(backend) na seguinte URL: https://rickverse-sooty.vercel.app/
