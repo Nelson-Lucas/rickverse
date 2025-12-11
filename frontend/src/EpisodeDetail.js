@@ -10,15 +10,17 @@ function EpisodeDetail() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
-    fetch(`http://localhost:4000/episode/${id}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setEpisode(data.episode);
-        setCharacters(data.characters);
-        setLoading(false);
-      });
-  }, [id]);
+  setLoading(true);
+  fetch(`${process.env.REACT_APP_API_URL}/episode/${id}`)
+    .then((res) => res.json())
+    .then((data) => {
+      setEpisode(data.episode);
+      setCharacters(data.characters);
+      setLoading(false);
+    })
+    .catch(() => setLoading(false));
+}, [id]);
+
 
   return (
     <div className="detail-container">

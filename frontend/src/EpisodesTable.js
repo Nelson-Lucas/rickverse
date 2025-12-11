@@ -14,15 +14,17 @@ function EpisodesTable() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    setLoading(true);
-    fetch(`http://localhost:4000/episodes?page=${page}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setEpisodes(data.results);
-        setTotalPages(data.info.pages);
-        setLoading(false);
-      });
-  }, [page]);
+  setLoading(true);
+  fetch(`${process.env.REACT_APP_API_URL}/episodes?page=${page}`)
+    .then((res) => res.json())
+    .then((data) => {
+      setEpisodes(data.results);
+      setTotalPages(data.info.pages);
+      setLoading(false);
+    })
+    .catch(() => setLoading(false));
+}, [page]);
+
 
   const filteredEpisodes = episodes.filter(ep =>
     ep.name.toLowerCase().includes(search.toLowerCase())
